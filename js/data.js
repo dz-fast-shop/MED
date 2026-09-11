@@ -72,5 +72,5 @@ const COMMUNES = {
 
 const CONFIG = {
   SHEET_WEBHOOK_URL: "https://script.google.com/macros/s/AKfycbyt7ruDnICbzYyIx-2Fa3477ipuV46iR9UnYnAZyWllTK5ummHXgJf8m1MI-ZA1ILw/exec",
-  STORE_NAME: "Med"
+  STORE_NAME: "MED"
 };
