@@ -241,7 +241,11 @@ document.addEventListener('DOMContentLoaded', function () {
         headers: { 'Content-Type': 'text/plain;charset=utf-8' },
         body: JSON.stringify(order)
       })
-      .then(function () {
+      .then(function () { 
+        // 🎯 تتبع فيسبوك بيكسل للطلب الناجح (Lead)
+        if (typeof fbq !== 'undefined') {
+          fbq('track', 'Lead');
+        }
         btn.disabled = false;
         btn.textContent = '✅ تأكيد الشراء الآن';
         form.reset();
